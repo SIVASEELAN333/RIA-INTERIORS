@@ -1,0 +1,537 @@
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact {
+    padding: 100px 0;
+    background: #f8f9fb;
+}
+
+.contact .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.contact .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact .section-title h4 {
+    color: #c79a2b;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.contact .section-title h2 {
+    font-size: 42px;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.contact .section-title p {
+    max-width: 720px;
+    margin: auto;
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* ==========================================
+   CONTACT GRID
+========================================== */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+/* ==========================================
+   CONTACT CARD
+========================================== */
+
+.contact-card {
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: all .35s ease;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid #eeeeee;
+
+}
+
+.contact-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0,0,0,.15);
+
+    border-color: #d4a017;
+
+}
+
+/* Gold top line */
+
+.contact-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background: #d4a017;
+
+    transform: scaleX(0);
+
+    transition: .35s;
+
+}
+
+.contact-card:hover::before {
+
+    transform: scaleX(1);
+
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.contact-icon {
+
+    width: 72px;
+
+    height: 72px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 22px;
+
+    flex-shrink: 0;
+
+    transition: .35s;
+
+}
+
+.contact-icon svg {
+
+    font-size: 30px;
+
+}
+
+.contact-card:hover .contact-icon {
+
+    transform: rotate(-10deg) scale(1.08);
+
+}
+/* ==========================================
+   CONTENT
+========================================== */
+
+.contact-content {
+
+    flex: 1;
+
+}
+
+.contact-content h3 {
+
+    font-size: 22px;
+
+    color: #222;
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+
+}
+
+.contact-content p {
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+/* ==========================================
+   ARROW
+========================================== */
+
+.contact-arrow {
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #f5f5f5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #555;
+
+    transition: .35s;
+
+    flex-shrink: 0;
+
+}
+
+.contact-arrow svg {
+
+    font-size: 16px;
+
+}
+
+.contact-card:hover .contact-arrow {
+
+    background: #d4a017;
+
+    color: #fff;
+
+    transform: translateX(6px);
+
+}
+
+/* ==========================================
+   BRAND COLORS
+========================================== */
+
+.whatsapp-card .contact-icon {
+
+    background: rgba(37,211,102,.12);
+
+    color: #25D366;
+
+}
+
+.instagram-card .contact-icon {
+
+    background: rgba(225,48,108,.10);
+
+    color: #E1306C;
+
+}
+
+.facebook-card .contact-icon {
+
+    background: rgba(24,119,242,.10);
+
+    color: #1877F2;
+
+}
+
+.location-card .contact-icon {
+
+    background: rgba(212,160,23,.12);
+
+    color: #d4a017;
+
+}
+
+/* ==========================================
+   CARD HOVER EFFECTS
+========================================== */
+
+.whatsapp-card:hover {
+
+    border-color: #25D366;
+
+}
+
+.whatsapp-card:hover .contact-icon {
+
+    background: #25D366;
+
+    color: white;
+
+}
+
+.instagram-card:hover {
+
+    border-color: #E1306C;
+
+}
+
+.instagram-card:hover .contact-icon {
+
+    background: #E1306C;
+
+    color: white;
+
+}
+
+.facebook-card:hover {
+
+    border-color: #1877F2;
+
+}
+
+.facebook-card:hover .contact-icon {
+
+    background: #1877F2;
+
+    color: white;
+
+}
+
+.location-card:hover {
+
+    border-color: #d4a017;
+
+}
+
+.location-card:hover .contact-icon {
+
+    background: #d4a017;
+
+    color: white;
+
+}
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 992px) {
+
+    .contact {
+        padding: 80px 0;
+    }
+
+    .contact .section-title h2 {
+        font-size: 36px;
+    }
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 24px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .contact {
+        padding: 70px 0;
+    }
+
+    .contact .section-title {
+
+        margin-bottom: 45px;
+
+    }
+
+    .contact .section-title h2 {
+
+        font-size: 30px;
+
+    }
+
+    .contact .section-title p {
+
+        font-size: 15px;
+
+    }
+
+    .contact-card {
+
+        padding: 24px;
+
+    }
+
+    .contact-icon {
+
+        width: 60px;
+
+        height: 60px;
+
+        margin-right: 18px;
+
+    }
+
+    .contact-icon svg {
+
+        font-size: 26px;
+
+    }
+
+    .contact-content h3 {
+
+        font-size: 20px;
+
+    }
+
+    .contact-content p {
+
+        font-size: 14px;
+
+    }
+
+    .contact-arrow {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .contact {
+
+        padding: 60px 0;
+
+    }
+
+    .contact .section-title h4 {
+
+        font-size: 15px;
+
+    }
+
+    .contact .section-title h2 {
+
+        font-size: 26px;
+
+    }
+
+    .contact .section-title p {
+
+        font-size: 14px;
+
+    }
+
+    .contact-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        text-align: left;
+
+        padding: 22px;
+
+    }
+
+    .contact-icon {
+
+        margin-right: 0;
+
+        margin-bottom: 18px;
+
+    }
+
+    .contact-arrow {
+
+        margin-top: 20px;
+
+        align-self: flex-end;
+
+    }
+
+}
+
+/* ==========================================
+   SMOOTH ANIMATIONS
+========================================== */
+
+.contact-card {
+
+    animation: fadeUp .6s ease both;
+
+}
+
+.contact-card:nth-child(2) {
+
+    animation-delay: .1s;
+
+}
+
+.contact-card:nth-child(3) {
+
+    animation-delay: .2s;
+
+}
+
+.contact-card:nth-child(4) {
+
+    animation-delay: .3s;
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
