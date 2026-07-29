@@ -14,7 +14,7 @@ function Contact() {
 
         {
             title: "WhatsApp",
-            subtitle: "Chat with our team instantly for project enquiries.",
+            subtitle: "Chat with us instantly.",
             icon: <FaWhatsapp />,
             className: "whatsapp-card",
             link: "https://wa.me/919940053350?text=Hello%20RIA%20Interiors%20%26%20Construction,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
@@ -22,7 +22,7 @@ function Contact() {
 
         {
             title: "Instagram",
-            subtitle: "Explore our latest interior and construction projects.",
+            subtitle: "View our latest projects.",
             icon: <FaInstagram />,
             className: "instagram-card",
             link: "https://www.instagram.com/ria_interiors_construction?igsh=YXpvOWcwY20zMDl5"
@@ -30,15 +30,15 @@ function Contact() {
 
         {
             title: "Facebook",
-            subtitle: "Stay updated with our completed works and news.",
+            subtitle: "See updates and completed works.",
             icon: <FaFacebookF />,
             className: "facebook-card",
             link: "https://www.facebook.com/share/1JLCTJvsFh/"
         },
 
         {
-            title: "Office Location",
-            subtitle: "Visit our office or open the location in Google Maps.",
+            title: "Location",
+            subtitle: "Open our office in Google Maps.",
             icon: <FaMapMarkerAlt />,
             className: "location-card",
             link: "https://maps.app.goo.gl/5vU4ox44uXycasHt7?g_st=aw"
@@ -54,14 +54,12 @@ function Contact() {
 
                 <div className="section-title">
 
-                    <h4>GET IN TOUCH</h4>
+                    <h4>CONTACT US</h4>
 
-                    <h2>Let's Build Something Great Together</h2>
+                    <h2>Let's Build Together</h2>
 
                     <p>
-                        Have a construction or interior design project in mind?
-                        Connect with us through any of the platforms below.
-                        Our team is always ready to help you.
+                        Get in touch with our team through any platform below.
                     </p>
 
                 </div>
@@ -86,17 +84,9 @@ function Contact() {
 
                             <div className="contact-content">
 
-                                <h3>
+                                <h3>{item.title}</h3>
 
-                                    {item.title}
-
-                                </h3>
-
-                                <p>
-
-                                    {item.subtitle}
-
-                                </p>
+                                <p>{item.subtitle}</p>
 
                             </div>
 
@@ -111,9 +101,8 @@ function Contact() {
                     ))}
 
                 </div>
-                                </div>
 
-           
+            </div>
 
         </section>
 

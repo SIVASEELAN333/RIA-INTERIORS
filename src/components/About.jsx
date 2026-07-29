@@ -90,124 +90,8 @@ function About() {
 
                     </p>
 
-                    {/* COMPANY STATS */}
-
-                    <div className="about-stats">
-
-                        <div className="stat-box">
-
-                            <FaBuilding />
-
-                            <h3>150+</h3>
-
-                            <p>Projects Completed</p>
-
-                        </div>
-
-                        <div className="stat-box">
-
-                            <FaUsers />
-
-                            <h3>120+</h3>
-
-                            <p>Happy Clients</p>
-
-                        </div>
-
-                        <div className="stat-box">
-
-                            <FaAward />
-
-                            <h3>25+</h3>
-
-                            <p>Expert Team</p>
-
-                        </div>
-
-                        <div className="stat-box">
-
-                            <FaHome />
-
-                            <h3>100%</h3>
-
-                            <p>Quality Focus</p>
-
-                        </div>
-
-                    </div>
-                                        {/* FEATURES */}
-
-                    <div className="about-features">
-
-                        <div className="feature-card">
-
-                            <FaDraftingCompass />
-
-                            <div>
-
-                                <h4>Architecture Design</h4>
-
-                                <p>
-                                    Creative planning with modern and
-                                    functional architectural solutions.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                        <div className="feature-card">
-
-                            <FaPaintRoller />
-
-                            <div>
-
-                                <h4>Interior Design</h4>
-
-                                <p>
-                                    Stylish interiors that combine
-                                    comfort, beauty and functionality.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                        <div className="feature-card">
-
-                            <FaHardHat />
-
-                            <div>
-
-                                <h4>Construction</h4>
-
-                                <p>
-                                    High-quality residential and
-                                    commercial construction services.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                        <div className="feature-card">
-
-                            <FaCheckCircle />
-
-                            <div>
-
-                                <h4>Complete Project Management</h4>
-
-                                <p>
-                                    From planning to handover, we manage
-                                    every stage with transparency.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
+                    
+                                     
 
                     {/* WHY CHOOSE US */}
 
@@ -223,18 +107,7 @@ function About() {
 
                     </div>
 
-                    {/* BUTTON */}
-
-                    <button
-                        className="about-btn"
-                        onClick={scrollToServices}
-                    >
-
-                        Explore Our Services
-
-                        <FaArrowRight />
-
-                    </button>
+                    
 
                 </div>
 

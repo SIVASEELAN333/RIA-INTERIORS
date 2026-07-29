@@ -1,12 +1,21 @@
+/* ==========================================
+                NAVBAR
+========================================== */
+
 .navbar{
 
     width:100%;
-    background:white;
+    background:#F8F8F8;
     position:sticky;
     top:0;
     left:0;
     z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    backdrop-filter:blur(15px);
+
+    animation:navbarFade .7s ease;
 
 }
 
@@ -15,9 +24,14 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 0;
+
+    padding:18px 0;
 
 }
+
+/* ==========================================
+                LOGO
+========================================== */
 
 .logo-section{
 
@@ -25,33 +39,55 @@
     align-items:center;
     gap:12px;
 
+    cursor:pointer;
+
 }
 
 .logo-section img{
 
-    width:60px;
+    width:62px;
+
+    transition:.45s;
+
+}
+
+.logo-section:hover img{
+
+    transform:rotate(-6deg) scale(1.08);
 
 }
 
 .logo-text h2{
 
-    color:#8B1E2D;
-    font-size:22px;
+    color:#C61F2B;
+
+    font-size:23px;
+
     font-weight:700;
+
+    letter-spacing:.5px;
 
 }
 
 .logo-text p{
 
     font-size:12px;
+
     color:#666;
 
 }
 
+/* ==========================================
+             NAVIGATION LINKS
+========================================== */
+
 .nav-links{
 
     display:flex;
+
     gap:35px;
+
+    align-items:center;
 
 }
 
@@ -63,41 +99,268 @@
 
 .nav-links a{
 
+    position:relative;
+
     text-decoration:none;
-    color:#333;
-    font-weight:500;
-    transition:.3s;
+
+    color:#444;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-7px;
+
+    width:0;
+
+    height:2px;
+
+    background:#C61F2B;
+
+    transition:.35s;
 
 }
 
 .nav-links a:hover{
 
-    color:#8B1E2D;
+    color:#C61F2B;
 
 }
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/* ==========================================
+               BUTTON
+========================================== */
 
 .call-btn{
 
     display:flex;
-    align-items:center;
-    gap:8px;
 
-    background:#C98C3B;
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    background:#C61F2B;
 
     color:white;
 
-    padding:12px 22px;
+    padding:12px 24px;
 
-    border-radius:30px;
+    border-radius:35px;
 
     text-decoration:none;
 
-    transition:.3s;
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 12px 25px rgba(198,31,43,.25);
 
 }
 
 .call-btn:hover{
 
-    background:#8B1E2D;
+    background:#4A4A4A;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 16px 35px rgba(0,0,0,.18);
+
+}
+
+/* ==========================================
+            ANIMATION
+========================================== */
+
+@keyframes navbarFade{
+
+from{
+
+opacity:0;
+
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+        TABLET RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.navbar-container{
+
+padding:15px 20px;
+
+}
+
+.nav-links{
+
+gap:20px;
+
+}
+
+.call-btn{
+
+padding:10px 18px;
+
+font-size:14px;
+
+}
+
+}
+
+/* ==========================================
+        MOBILE RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.navbar-container{
+
+flex-direction:column;
+
+gap:18px;
+
+padding:15px;
+
+}
+
+.logo-section{
+
+justify-content:center;
+
+}
+
+.logo-section img{
+
+width:52px;
+
+}
+
+.logo-text h2{
+
+font-size:18px;
+
+}
+
+.logo-text p{
+
+font-size:11px;
+
+}
+
+.nav-links{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:16px;
+
+}
+
+.nav-links a{
+
+font-size:14px;
+
+}
+
+.call-btn{
+
+width:100%;
+
+max-width:240px;
+
+}
+
+}
+
+/* ==========================================
+       SMALL MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+.navbar-container{
+
+padding:12px;
+
+}
+
+.logo-section{
+
+flex-direction:column;
+
+gap:8px;
+
+}
+
+.logo-text{
+
+text-align:center;
+
+}
+
+.logo-text h2{
+
+font-size:16px;
+
+}
+
+.logo-text p{
+
+font-size:10px;
+
+}
+
+.nav-links{
+
+gap:10px;
+
+}
+
+.nav-links a{
+
+font-size:13px;
+
+}
+
+.call-btn{
+
+padding:10px 16px;
+
+font-size:13px;
+
+}
 
 }

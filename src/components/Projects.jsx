@@ -61,45 +61,6 @@ function Projects() {
       ]
     },
 
-    {
-      image: project3,
-
-      title: "Modular Kitchen",
-
-      location: "Coimbatore",
-
-      category: "Interior",
-
-      description:
-        "A modern modular kitchen with smart storage, elegant cabinets and premium quality materials.",
-
-      features: [
-        "Modular Cabinets",
-        "Granite Countertop",
-        "Smart Storage",
-        "Premium Accessories"
-      ]
-    },
-
-    {
-      image: project4,
-
-      title: "Commercial Building",
-
-      location: "Bangalore",
-
-      category: "Commercial",
-
-      description:
-        "A multi-storey commercial building designed with modern elevation and high-quality construction standards.",
-
-      features: [
-        "Modern Elevation",
-        "Parking Area",
-        "Lift Facility",
-        "Safety Standards"
-      ]
-    },
 
     {
       image: project5,
@@ -119,27 +80,8 @@ function Projects() {
         "Power Backup",
         "Children Park"
       ]
-    },
-
-    {
-      image: project6,
-
-      title: "Corporate Office",
-
-      location: "Chennai",
-
-      category: "Office Interior",
-
-      description:
-        "A modern corporate office with stylish workspaces, conference rooms and premium interiors.",
-
-      features: [
-        "Conference Hall",
-        "Work Stations",
-        "Reception Area",
-        "Modern Lighting"
-      ]
     }
+
 
   ];
     return (

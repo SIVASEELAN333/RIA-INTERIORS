@@ -2,61 +2,92 @@
    CONTACT SECTION
 ========================================== */
 
-.contact {
-    padding: 100px 0;
-    background: #f8f9fb;
+.contact{
+
+    padding:70px 0;
+
+    background:#F7F7F7;
+
+    overflow:hidden;
+
 }
 
-.contact .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+.contact .container{
+
+    width:90%;
+
+    max-width:1150px;
+
+    margin:auto;
+
 }
 
 /* ==========================================
    SECTION TITLE
 ========================================== */
 
-.contact .section-title {
-    text-align: center;
-    margin-bottom: 60px;
+.contact .section-title{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    animation:fadeUp 1s ease;
+
 }
 
-.contact .section-title h4 {
-    color: #c79a2b;
-    font-size: 17px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 12px;
+.contact .section-title h4{
+
+    color:#C61F2B;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    margin-bottom:10px;
+
 }
 
-.contact .section-title h2 {
-    font-size: 42px;
-    color: #222;
-    font-weight: 700;
-    margin-bottom: 18px;
+.contact .section-title h2{
+
+    font-size:34px;
+
+    color:#333333;
+
+    font-weight:700;
+
+    margin-bottom:14px;
+
 }
 
-.contact .section-title p {
-    max-width: 720px;
-    margin: auto;
-    color: #666;
-    line-height: 1.8;
-    font-size: 16px;
-}
+.contact .section-title p{
 
+    max-width:560px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
 /* ==========================================
    CONTACT GRID
 ========================================== */
 
-.contact-grid {
+.contact-grid{
 
-    display: grid;
+    display:grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:repeat(2,1fr);
 
-    gap: 30px;
+    gap:20px;
 
 }
 
@@ -64,71 +95,75 @@
    CONTACT CARD
 ========================================== */
 
-.contact-card {
+.contact-card{
 
-    background: #ffffff;
+    background:#fff;
 
-    border-radius: 18px;
+    border-radius:14px;
 
-    padding: 30px;
+    padding:22px;
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
 
-    text-decoration: none;
+    text-decoration:none;
 
-    color: inherit;
+    color:inherit;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    position:relative;
 
-    transition: all .35s ease;
+    overflow:hidden;
 
-    position: relative;
+    border:1px solid #E8E8E8;
 
-    overflow: hidden;
+    box-shadow:0 8px 22px rgba(0,0,0,.08);
 
-    border: 1px solid #eeeeee;
+    transition:all .35s ease;
 
-}
-
-.contact-card:hover {
-
-    transform: translateY(-8px);
-
-    box-shadow: 0 18px 40px rgba(0,0,0,.15);
-
-    border-color: #d4a017;
+    animation:floatCard 5s ease-in-out infinite;
 
 }
 
-/* Gold top line */
+.contact-card:hover{
 
-.contact-card::before {
+    transform:translateY(-8px);
 
-    content: "";
+    border-color:#C61F2B;
 
-    position: absolute;
-
-    left: 0;
-
-    top: 0;
-
-    width: 100%;
-
-    height: 4px;
-
-    background: #d4a017;
-
-    transform: scaleX(0);
-
-    transition: .35s;
+    box-shadow:0 18px 35px rgba(198,31,43,.20);
 
 }
 
-.contact-card:hover::before {
+/* Red Top Border Animation */
 
-    transform: scaleX(1);
+.contact-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:3px;
+
+    background:#C61F2B;
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s;
+
+}
+
+.contact-card:hover::before{
+
+    transform:scaleX(1);
 
 }
 
@@ -136,68 +171,69 @@
    ICON
 ========================================== */
 
-.contact-icon {
+.contact-icon{
 
-    width: 72px;
+    width:60px;
 
-    height: 72px;
+    height:60px;
 
-    border-radius: 50%;
+    border-radius:50%;
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
 
-    justify-content: center;
+    justify-content:center;
 
-    margin-right: 22px;
+    margin-right:18px;
 
-    flex-shrink: 0;
+    flex-shrink:0;
 
-    transition: .35s;
-
-}
-
-.contact-icon svg {
-
-    font-size: 30px;
+    transition:.35s;
 
 }
 
-.contact-card:hover .contact-icon {
+.contact-icon svg{
 
-    transform: rotate(-10deg) scale(1.08);
+    font-size:26px;
 
 }
+
+.contact-card:hover .contact-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+}
+
 /* ==========================================
    CONTENT
 ========================================== */
 
-.contact-content {
+.contact-content{
 
-    flex: 1;
-
-}
-
-.contact-content h3 {
-
-    font-size: 22px;
-
-    color: #222;
-
-    margin-bottom: 10px;
-
-    font-weight: 600;
+    flex:1;
 
 }
 
-.contact-content p {
+.contact-content h3{
 
-    color: #666;
+    font-size:20px;
 
-    font-size: 15px;
+    color:#333;
 
-    line-height: 1.7;
+    margin-bottom:6px;
+
+    font-weight:600;
+
+}
+
+.contact-content p{
+
+    color:#666;
+
+    font-size:14px;
+
+    line-height:1.5;
 
 }
 
@@ -205,43 +241,43 @@
    ARROW
 ========================================== */
 
-.contact-arrow {
+.contact-arrow{
 
-    width: 45px;
+    width:40px;
 
-    height: 45px;
+    height:40px;
 
-    border-radius: 50%;
+    border-radius:50%;
 
-    background: #f5f5f5;
+    background:#F4F4F4;
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
 
-    justify-content: center;
+    justify-content:center;
 
-    color: #555;
+    color:#555;
 
-    transition: .35s;
+    transition:.35s;
 
-    flex-shrink: 0;
-
-}
-
-.contact-arrow svg {
-
-    font-size: 16px;
+    flex-shrink:0;
 
 }
 
-.contact-card:hover .contact-arrow {
+.contact-arrow svg{
 
-    background: #d4a017;
+    font-size:15px;
 
-    color: #fff;
+}
 
-    transform: translateX(6px);
+.contact-card:hover .contact-arrow{
+
+    background:#C61F2B;
+
+    color:#fff;
+
+    transform:translateX(5px);
 
 }
 
@@ -249,289 +285,445 @@
    BRAND COLORS
 ========================================== */
 
-.whatsapp-card .contact-icon {
+.whatsapp-card .contact-icon{
 
-    background: rgba(37,211,102,.12);
+    background:rgba(37,211,102,.12);
 
-    color: #25D366;
-
-}
-
-.instagram-card .contact-icon {
-
-    background: rgba(225,48,108,.10);
-
-    color: #E1306C;
+    color:#25D366;
 
 }
 
-.facebook-card .contact-icon {
+.instagram-card .contact-icon{
 
-    background: rgba(24,119,242,.10);
+    background:rgba(225,48,108,.10);
 
-    color: #1877F2;
-
-}
-
-.location-card .contact-icon {
-
-    background: rgba(212,160,23,.12);
-
-    color: #d4a017;
+    color:#E1306C;
 
 }
 
-/* ==========================================
-   CARD HOVER EFFECTS
-========================================== */
+.facebook-card .contact-icon{
 
-.whatsapp-card:hover {
+    background:rgba(24,119,242,.10);
 
-    border-color: #25D366;
+    color:#1877F2;
 
 }
 
-.whatsapp-card:hover .contact-icon {
+.location-card .contact-icon{
 
-    background: #25D366;
+    background:rgba(198,31,43,.12);
 
-    color: white;
-
-}
-
-.instagram-card:hover {
-
-    border-color: #E1306C;
+    color:#C61F2B;
 
 }
 
-.instagram-card:hover .contact-icon {
+/* Hover Fill */
 
-    background: #E1306C;
+.whatsapp-card:hover .contact-icon{
 
-    color: white;
+    background:#25D366;
 
-}
-
-.facebook-card:hover {
-
-    border-color: #1877F2;
+    color:#fff;
 
 }
 
-.facebook-card:hover .contact-icon {
+.instagram-card:hover .contact-icon{
 
-    background: #1877F2;
+    background:#E1306C;
 
-    color: white;
-
-}
-
-.location-card:hover {
-
-    border-color: #d4a017;
+    color:#fff;
 
 }
 
-.location-card:hover .contact-icon {
+.facebook-card:hover .contact-icon{
 
-    background: #d4a017;
+    background:#1877F2;
 
-    color: white;
+    color:#fff;
+
+}
+
+.location-card:hover .contact-icon{
+
+    background:#C61F2B;
+
+    color:#fff;
 
 }
 /* ==========================================
    RESPONSIVE DESIGN
 ========================================== */
 
-@media (max-width: 992px) {
+@media (max-width:992px){
 
-    .contact {
-        padding: 80px 0;
+.contact{
+
+    padding:60px 0;
+
+}
+
+.contact .section-title{
+
+    margin-bottom:35px;
+
+}
+
+.contact .section-title h2{
+
+    font-size:30px;
+
+}
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+}
+
+.contact-card{
+
+    padding:20px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.contact{
+
+    padding:50px 0;
+
+}
+
+.contact .container{
+
+    width:94%;
+
+}
+
+.contact .section-title{
+
+    margin-bottom:28px;
+
+}
+
+.contact .section-title h4{
+
+    font-size:14px;
+
+}
+
+.contact .section-title h2{
+
+    font-size:26px;
+
+}
+
+.contact .section-title p{
+
+    font-size:14px;
+
+}
+
+.contact-card{
+
+    padding:18px;
+
+}
+
+.contact-icon{
+
+    width:55px;
+
+    height:55px;
+
+    margin-right:16px;
+
+}
+
+.contact-icon svg{
+
+    font-size:22px;
+
+}
+
+.contact-content h3{
+
+    font-size:18px;
+
+}
+
+.contact-content p{
+
+    font-size:13px;
+
+}
+
+.contact-arrow{
+
+    width:36px;
+
+    height:36px;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.contact{
+
+    padding:40px 0;
+
+}
+
+.contact .container{
+
+    width:92%;
+
+}
+
+.contact-card{
+
+    padding:16px;
+
+    border-radius:12px;
+
+    flex-direction:row;
+
+    align-items:center;
+
+}
+
+.contact-icon{
+
+    width:50px;
+
+    height:50px;
+
+    margin-right:14px;
+
+}
+
+.contact-icon svg{
+
+    font-size:20px;
+
+}
+
+.contact-content h3{
+
+    font-size:17px;
+
+    margin-bottom:4px;
+
+}
+
+.contact-content p{
+
+    font-size:12px;
+
+    line-height:1.4;
+
+}
+
+.contact-arrow{
+
+    width:34px;
+
+    height:34px;
+
+}
+
+}
+
+/* ==========================================
+      PREMIUM ANIMATIONS
+========================================== */
+
+.contact-grid{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.contact-card:nth-child(1){
+
+    animation:cardFloat 5s ease-in-out infinite;
+
+}
+
+.contact-card:nth-child(2){
+
+    animation:cardFloat 5s ease-in-out infinite .4s;
+
+}
+
+.contact-card:nth-child(3){
+
+    animation:cardFloat 5s ease-in-out infinite .8s;
+
+}
+
+.contact-card:nth-child(4){
+
+    animation:cardFloat 5s ease-in-out infinite 1.2s;
+
+}
+
+.contact-icon{
+
+    animation:iconPulse 4s ease-in-out infinite;
+
+}
+
+.contact-arrow{
+
+    animation:arrowMove 2.5s ease-in-out infinite;
+
+}
+
+.contact:hover .section-title h2{
+
+    letter-spacing:.5px;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px) scale(1.02);
+
+}
+
+.contact-card:hover .contact-content h3{
+
+    color:#C61F2B;
+
+}
+
+.contact-card:hover .contact-content p{
+
+    color:#555;
+
+}
+
+/* ==========================================
+      KEYFRAMES
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
     }
 
-    .contact .section-title h2 {
-        font-size: 36px;
-    }
+    to{
 
-    .contact-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 24px;
+        opacity:1;
+        transform:translateY(0);
 
     }
 
 }
 
-@media (max-width: 768px) {
+@keyframes cardFloat{
 
-    .contact {
-        padding: 70px 0;
-    }
+    0%{
 
-    .contact .section-title {
-
-        margin-bottom: 45px;
+        transform:translateY(0);
 
     }
 
-    .contact .section-title h2 {
+    50%{
 
-        font-size: 30px;
-
-    }
-
-    .contact .section-title p {
-
-        font-size: 15px;
+        transform:translateY(-6px);
 
     }
 
-    .contact-card {
+    100%{
 
-        padding: 24px;
-
-    }
-
-    .contact-icon {
-
-        width: 60px;
-
-        height: 60px;
-
-        margin-right: 18px;
-
-    }
-
-    .contact-icon svg {
-
-        font-size: 26px;
-
-    }
-
-    .contact-content h3 {
-
-        font-size: 20px;
-
-    }
-
-    .contact-content p {
-
-        font-size: 14px;
-
-    }
-
-    .contact-arrow {
-
-        width: 40px;
-
-        height: 40px;
+        transform:translateY(0);
 
     }
 
 }
 
-@media (max-width: 576px) {
+@keyframes iconPulse{
 
-    .contact {
+    0%{
 
-        padding: 60px 0;
-
-    }
-
-    .contact .section-title h4 {
-
-        font-size: 15px;
+        transform:scale(1);
 
     }
 
-    .contact .section-title h2 {
+    50%{
 
-        font-size: 26px;
-
-    }
-
-    .contact .section-title p {
-
-        font-size: 14px;
+        transform:scale(1.08);
 
     }
 
-    .contact-card {
+    100%{
 
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        text-align: left;
-
-        padding: 22px;
+        transform:scale(1);
 
     }
 
-    .contact-icon {
+}
 
-        margin-right: 0;
+@keyframes arrowMove{
 
-        margin-bottom: 18px;
+    0%{
+
+        transform:translateX(0);
 
     }
 
-    .contact-arrow {
+    50%{
 
-        margin-top: 20px;
+        transform:translateX(4px);
 
-        align-self: flex-end;
+    }
+
+    100%{
+
+        transform:translateX(0);
 
     }
 
 }
 
 /* ==========================================
-   SMOOTH ANIMATIONS
+      SMOOTH TRANSITIONS
 ========================================== */
 
-.contact-card {
+.contact,
+.contact *,
+.contact-card,
+.contact-icon,
+.contact-arrow{
 
-    animation: fadeUp .6s ease both;
-
-}
-
-.contact-card:nth-child(2) {
-
-    animation-delay: .1s;
+    transition:all .35s ease;
 
 }
 
-.contact-card:nth-child(3) {
+/* ==========================================
+      REDUCE MOTION
+========================================== */
 
-    animation-delay: .2s;
+@media(prefers-reduced-motion:reduce){
+
+*{
+
+    animation:none !important;
+
+    transition:none !important;
 
 }
-
-.contact-card:nth-child(4) {
-
-    animation-delay: .3s;
-
-}
-
-@keyframes fadeUp {
-
-    from {
-
-        opacity: 0;
-
-        transform: translateY(30px);
-
-    }
-
-    to {
-
-        opacity: 1;
-
-        transform: translateY(0);
-
-    }
 
 }

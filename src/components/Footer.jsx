@@ -1,13 +1,12 @@
 import "../styles/Footer.css";
 
 import {
-    FaFacebookF,
-    FaInstagram,
-    FaLinkedinIn,
-    FaYoutube,
     FaPhoneAlt,
     FaEnvelope,
-    FaMapMarkerAlt
+    FaMapMarkerAlt,
+    FaFacebookF,
+    FaInstagram,
+    FaYoutube
 } from "react-icons/fa";
 
 function Footer() {
@@ -24,7 +23,7 @@ function Footer() {
     const locationLink =
         "https://maps.app.goo.gl/5vU4ox44uXycasHt7?g_st=aw";
 
-    const email = "riaassociatescontact@gmail.com";
+    const email = "riainteriorscontraction@gmail.com";
 
     return (
 
@@ -32,18 +31,46 @@ function Footer() {
 
             <div className="container footer-container">
 
-                {/* Company Details */}
+                <div className="footer-contact">
 
-                <div className="footer-about">
-
-                    <h2>RIA Associates</h2>
+                    <h2>Contact Us</h2>
 
                     <p>
-                        RIA Associates is a trusted Architecture,
-                        Interior Design and Construction company delivering
-                        quality residential and commercial projects with
-                        innovative designs, premium workmanship and
-                        customer satisfaction.
+
+                        <a
+                            href={whatsappLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaPhoneAlt style={{ marginRight: "10px" }} />
+                            +91 99400 53350
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <a
+                            href={`mailto:${email}`}
+                            className="footer-contact-link"
+                        >
+                            <FaEnvelope style={{ marginRight: "10px" }} />
+                            <span>{email}</span>
+                        </a>
+
+                    </p>
+
+                    <p>
+
+                        <a
+                            href={locationLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaMapMarkerAlt style={{ marginRight: "10px" }} />
+                            Chennai, Tamil Nadu
+                        </a>
+
                     </p>
 
                     <div className="social-icons">
@@ -67,15 +94,6 @@ function Footer() {
                         </a>
 
                         <a
-                            href={whatsappLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="WhatsApp"
-                        >
-                            <FaPhoneAlt />
-                        </a>
-
-                        <a
                             href="https://www.youtube.com/"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -88,108 +106,12 @@ function Footer() {
 
                 </div>
 
-                {/* Quick Links */}
-
-                <div className="footer-links">
-
-                    <h3>Quick Links</h3>
-
-                    <ul>
-
-                        <li><a href="#home">Home</a></li>
-
-                        <li><a href="#about">About</a></li>
-
-                        <li><a href="#services">Services</a></li>
-
-                        <li><a href="#projects">Projects</a></li>
-
-                        <li><a href="#gallery">Gallery</a></li>
-
-                        <li><a href="#testimonials">Testimonials</a></li>
-
-                        <li><a href="#contact">Contact</a></li>
-
-                    </ul>
-
-                </div>
-
-                {/* Services */}
-
-                <div className="footer-services">
-
-                    <h3>Our Services</h3>
-
-                    <ul>
-
-                        <li>Architecture Design</li>
-
-                        <li>Interior Design</li>
-
-                        <li>Construction</li>
-
-                        <li>Renovation</li>
-
-                        <li>Project Planning</li>
-
-                    </ul>
-
-                </div>
-
-                {/* Contact */}
-
-                <div className="footer-contact">
-
-                    <h3>Contact Info</h3>
-
-                    <p>
-
-                        <a
-                            href={whatsappLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <FaPhoneAlt style={{ marginRight: "10px" }} />
-                             +91 99400 53350
-                        </a>
-
-                    </p>
-
-                    <p>
-    <a
-        href={`mailto:${email}`}
-        className="footer-contact-link"
-    >
-        <FaEnvelope className="footer-contact-icon" />
-        <span>{email}</span>
-    </a>
-</p>
-
-                    <p>
-
-                        <a
-                            href={locationLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <FaMapMarkerAlt style={{ marginRight: "10px" }} />
-                            View Our Office Location
-
-                        </a>
-
-                    </p>
-
-                </div>
-
             </div>
 
             <div className="footer-bottom">
 
                 <p>
-
                     © {new Date().getFullYear()} RIA Associates. All Rights Reserved.
-
                 </p>
 
             </div>
