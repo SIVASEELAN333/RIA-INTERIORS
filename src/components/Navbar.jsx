@@ -1,6 +1,6 @@
 import "./../styles/Navbar.css";
 import logo from "../assets/images/logo.png";
-import { FaPhoneAlt } from "react-icons/fa";
+
 
 function Navbar() {
   return (
@@ -32,15 +32,6 @@ function Navbar() {
 
         </ul>
 
-        <a
-          href="https://wa.me/919940053350"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="call-btn"
-        >
-          <FaPhoneAlt />
-          WhatsApp Now
-        </a>
 
       </div>
 

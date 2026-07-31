@@ -1,8 +1,8 @@
 import "../styles/Testimonials.css";
 
-import client1 from "../assets/images/client1.jpg";
-import client2 from "../assets/images/client2.jpg";
-import client3 from "../assets/images/client3.jpg";
+import client1 from "../assets/images/client4.jpg";
+import client2 from "../assets/images/client6.jpg";
+import client3 from "../assets/images/client5.jpg";
 
 import { FaStar } from "react-icons/fa";
 
@@ -15,7 +15,7 @@ function Testimonials() {
             name: "Rahul Sharma",
             role: "Home Owner",
             review:
-                "RIA Associates completed our dream home with excellent quality and timely delivery. The entire team was professional and supportive."
+                "RIA Interiors & Construction completed our dream home with excellent quality and timely delivery. The entire team was professional and supportive."
         },
 
         {
@@ -31,7 +31,7 @@ function Testimonials() {
             name: "Arun Kumar",
             role: "Business Owner",
             review:
-                "We hired RIA Associates for our office construction. The work quality, transparency and communication were outstanding."
+                "We hired RIA Interiors & Construction for our office construction. The work quality, transparency and communication were outstanding."
         }
 
     ];

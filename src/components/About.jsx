@@ -64,7 +64,7 @@ function About() {
 
                     <span className="section-tag">
 
-                        ABOUT RIA ASSOCIATES
+                        ABOUT RIA Interiors & Construction
 
                     </span>
 
@@ -78,7 +78,7 @@ function About() {
 
                     <p>
 
-                        RIA Associates is a trusted Architecture,
+                        RIA Interiors & Construction is a trusted Architecture,
                         Interior Design and Construction company
                         committed to delivering innovative,
                         functional and high-quality spaces.

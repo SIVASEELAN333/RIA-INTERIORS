@@ -37,7 +37,7 @@ function Hero() {
 
       <img
         src={heroImage}
-        alt="RIA Associates"
+        alt="RIA Interiors & Construction"
         className="hero-image"
       />
 
@@ -54,7 +54,6 @@ function Hero() {
         <h1>
 
           Build Your Dream Home
-          With RIA Associates
 
         </h1>
 
