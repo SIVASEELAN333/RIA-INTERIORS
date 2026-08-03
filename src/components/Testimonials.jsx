@@ -1,8 +1,8 @@
 import "../styles/Testimonials.css";
 
-import client1 from "../assets/images/client4.jpg";
-import client2 from "../assets/images/client6.jpg";
-import client3 from "../assets/images/client5.jpg";
+import client1 from "../assets/images/Client4.jpg";
+import client2 from "../assets/images/Client6.jpg";
+import client3 from "../assets/images/Client5.jpg";
 
 import { FaStar } from "react-icons/fa";
 
