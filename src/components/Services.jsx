@@ -159,7 +159,6 @@ function Services() {
 
         <div className="section-title">
           <h4>OUR SERVICES</h4>
-          <h2>Our Professional Services</h2>
 
           <p>
             We provide complete architecture, interior design and construction
