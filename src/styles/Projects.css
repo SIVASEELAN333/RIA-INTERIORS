@@ -19,7 +19,7 @@
 }
 
 .section-title h4 {
-    color: #C61F2B;
+    color: #8B1E2D;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 2px;
@@ -84,7 +84,7 @@
 
 .category {
     display: inline-block;
-    background: #C61F2B;
+    background: #8B1E2D;
     color: #fff;
     padding: 6px 14px;
     border-radius: 30px;
@@ -108,7 +108,7 @@
 }
 
 .location svg {
-    color: #C61F2B;
+    color: #8B1E2D;
 }
 
 /* ===========================
@@ -117,7 +117,7 @@
 
 .view-btn {
     border: none;
-    background: #C61F2B;
+    background: #8B1E2D;
     color: white;
     padding: 12px 24px;
     border-radius: 30px;
