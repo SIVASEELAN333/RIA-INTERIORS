@@ -3,11 +3,17 @@
 ========================= */
 
 .hero{
+
     position:relative;
+
     height:100vh;
-    display:flex;
-    align-items:center;
+
+    min-height:100vh;
+
+    padding:0;
+
     overflow:hidden;
+
 }
 
 .hero-image{
@@ -22,21 +28,79 @@
     background:rgba(0,0,0,0.55);
 }
 
+/* Premium Hero Heading */
+
+.white-text{
+
+    color:#ffffff;
+
+    display:block;
+
+}
+
+.gold-text{
+
+    display:block;
+
+    background:linear-gradient(
+        180deg,
+        #FFD978 0%,
+        #F5C96A 30%,
+        #E7B651 55%,
+        #D79B2D 80%,
+        #C98514 100%
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+
+    text-shadow:
+        0 2px 8px rgba(255,210,120,.25),
+        0 4px 20px rgba(201,133,20,.20);
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .white-text,
+    .gold-text{
+
+        display:block;
+
+    }
+
+}
+
 /* =========================
    CONTENT
 ========================= */
 
 .hero-content{
+
     position:absolute;
-    left:8%;
-    max-width:620px;
-    color:#D9D9D9;
+
+    top:50%;
+
+    left:20px;
+
+    right:20px;
+
+    transform:translateY(-50%);
+
+    text-align:center;
+
+    max-width:100%;
+
     z-index:2;
+
 }
 
 .hero-tag{
     display:inline-block;
-    background:#C61F2B;
+    background:#8B1E2D;
     color:#D9D9D9;
     padding:8px 18px;
     border-radius:4px;
@@ -53,7 +117,7 @@
 }
 
 .hero-content h3{
-    color:#C61F2B;
+    color:#f9f7f8;
     margin-bottom:20px;
     font-size:22px;
 }
@@ -62,7 +126,7 @@
     font-size:17px;
     line-height:1.8;
     color:#D9D9D9;
-    margin-bottom:35px;
+    margin-bottom:20px;
 }
 
 /* =========================
@@ -71,12 +135,15 @@
 
 .hero-buttons{
     display:flex;
+    justify-content:center;
+    align-items:center;
     gap:15px;
-    margin-bottom:40px;
+    margin:0 auto 25px;
+    flex-wrap:wrap;
 }
 
 .primary-btn{
-    background:#C61F2B;
+    background:#8B1E2D;
     color:#F7F7F7;
     border:none;
     padding:14px 30px;
@@ -87,7 +154,7 @@
 }
 
 .primary-btn:hover{
-    background:#C61F2B;
+    background:#8B1E2D;
 }
 
 .secondary-btn{
@@ -111,18 +178,57 @@
 
 .hero-stats{
     display:flex;
-    gap:25px;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
     flex-wrap:wrap;
+    width:100%;
+    margin:0 auto;
 }
 
 .stat-card{
-    text-align:left;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    min-width:130px;
 }
 
 .stat-card h2{
-    color:#C61F2B;
+
     font-size:30px;
+
     margin-bottom:6px;
+
+    font-weight:700;
+
+    background:linear-gradient(
+        180deg,
+        #FFE7A5 0%,
+        #FFD978 20%,
+        #F5C96A 45%,
+        #E7B651 70%,
+        #D79B2D 90%,
+        #C98514 100%
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+
+    text-shadow:
+        0 2px 8px rgba(255,217,120,.25),
+        0 5px 18px rgba(201,133,20,.20);
+
+}
+
+.stat-card:hover h2{
+
+    filter:brightness(1.15);
+
+    transform:scale(1.06);
+
 }
 
 .stat-card p{
@@ -166,7 +272,7 @@
 }
 
 .hero-stats{
-    gap:20px;
+    gap:12px;
 }
 
 }
@@ -221,10 +327,11 @@
         line-height: 1.7;
     }
 
-    .hero-buttons {
-        width: 100%;
-        align-items: center;
-    }
+    .hero-buttons{
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
 
     .primary-btn,
     .secondary-btn {
@@ -232,10 +339,14 @@
         max-width: 300px;
     }
 
-    .hero-stats {
-        justify-content: center;
-        gap: 20px;
-    }
+    .hero-stats{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-items:center;
+    align-items:center;
+    gap:18px;
+    margin-top:25px;
+}
 
     .stat-card {
         text-align: center;
@@ -245,10 +356,15 @@
 
 @media (max-width: 480px) {
 
-    .hero {
-        min-height: 90vh;
-        padding: 60px 0;
-    }
+    .hero{
+
+    height:100vh;
+
+    min-height:100vh;
+
+    padding:0;
+
+}
 
     .hero-tag {
         font-size: 12px;

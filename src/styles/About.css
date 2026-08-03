@@ -306,6 +306,14 @@
 
 .about-highlights div{
 
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    text-align:left;
+
     padding:14px 16px;
 
     background:#fff;

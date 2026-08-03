@@ -1,5 +1,5 @@
 import "../styles/Hero.css";
-import heroImage from "../assets/images/hero.jpg";
+import heroImage from "../assets/images/hero4.png";
 
 function Hero() {
 
@@ -52,10 +52,10 @@ function Hero() {
         </span>
 
         <h1>
-
-          Build Your Dream Home
-
-        </h1>
+  <span className="white-text">Build Your</span>
+  
+  <span className="gold-text">Dream Home</span>
+</h1>
 
         <h3>
 

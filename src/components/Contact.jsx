@@ -1,4 +1,5 @@
 import "../styles/Contact.css";
+import { useState } from "react";
 
 import {
     FaWhatsapp,
@@ -9,6 +10,8 @@ import {
 } from "react-icons/fa";
 
 function Contact() {
+
+    const [showLocationPopup, setShowLocationPopup] = useState(false);
 
     const contactItems = [
 
@@ -38,10 +41,9 @@ function Contact() {
 
         {
             title: "Location",
-            subtitle: "Open our office in Google Maps.",
+            subtitle: "Choose your office location.",
             icon: <FaMapMarkerAlt />,
-            className: "location-card",
-            link: "https://maps.app.goo.gl/5vU4ox44uXycasHt7?g_st=aw"
+            className: "location-card"
         }
 
     ];
@@ -70,10 +72,21 @@ function Contact() {
 
                         <a
                             key={index}
-                            href={item.link}
-                            target="_blank"
+                            href={item.title !== "Location" ? item.link : "#"}
+                            target={item.title !== "Location" ? "_blank" : ""}
                             rel="noopener noreferrer"
                             className={`contact-card ${item.className}`}
+                            onClick={(e) => {
+
+                                if (item.title === "Location") {
+
+                                    e.preventDefault();
+
+                                    setShowLocationPopup(true);
+
+                                }
+
+                            }}
                         >
 
                             <div className="contact-icon">
@@ -103,6 +116,78 @@ function Contact() {
                 </div>
 
             </div>
+
+            {/* Location Popup */}
+
+            {showLocationPopup && (
+
+                <div className="location-popup">
+
+                    <div className="popup-box">
+
+                        <h2>Select Office Location</h2>
+
+                        <p>Please choose your preferred branch.</p>
+
+                        <button
+
+                            className="popup-btn"
+
+                            onClick={() => {
+
+                                window.open(
+                                    "https://maps.app.goo.gl/qx6DUJFM7u4dyPhe6",
+                                    "_blank"
+                                );
+
+                                setShowLocationPopup(false);
+
+                            }}
+
+                        >
+
+                            📍 Chennai
+
+                        </button>
+
+                        <button
+
+                            className="popup-btn"
+
+                            onClick={() => {
+
+                                window.open(
+                                    "https://maps.app.goo.gl/AXG5MqFBVFY8tEDP7",
+                                    "_blank"
+                                );
+
+                                setShowLocationPopup(false);
+
+                            }}
+
+                        >
+
+                            📍 Bangalore
+
+                        </button>
+
+                        <button
+
+                            className="popup-close"
+
+                            onClick={() => setShowLocationPopup(false)}
+
+                        >
+
+                            Close
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            )}
 
         </section>
 
