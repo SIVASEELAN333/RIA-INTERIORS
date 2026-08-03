@@ -101,7 +101,7 @@ function About() {
 
                         <div>✔ On-Time Project Delivery</div>
 
-                        <div>✔ Experienced Engineers & Designers</div>
+                        <div>✔ Skilled Professionals</div>
 
                         <div>✔ Transparent Pricing</div>
 
