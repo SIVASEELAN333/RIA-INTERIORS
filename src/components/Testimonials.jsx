@@ -12,18 +12,18 @@ function Testimonials() {
 
         {
             image: client1,
-            name: "Rahul Sharma",
+            name: "Ranjith",
             role: "Home Owner",
             review:
-                "RIA Interiors & Construction completed our dream home with excellent quality and timely delivery. The entire team was professional and supportive."
+                "Superb very friendly team they gave us more than 3, 4 designs many modifications was done on our taste."
         },
 
         {
             image: client2,
-            name: "Priya Nair",
+            name: "Soumita Goswami",
             role: "Interior Client",
             review:
-                "Their interior design ideas were creative and modern. The final result exceeded our expectations."
+                "Excellence is the Word for this team. Simply love their work. Thanks."
         },
 
         {
@@ -31,7 +31,7 @@ function Testimonials() {
             name: "Arun Kumar",
             role: "Business Owner",
             review:
-                "We hired RIA Interiors & Construction for our office construction. The work quality, transparency and communication were outstanding."
+                "Nice Designing we gave our building design to Ar. Vijay on time delivery and so modifications was done until we felt satisfied thank you so much vijay and team"
         }
 
     ];
