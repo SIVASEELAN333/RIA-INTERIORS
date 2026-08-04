@@ -24,7 +24,7 @@ function Projects() {
     {
       image: project1,
 
-      title: "Luxury Villa",
+      title: "Villa",
 
       location: "Bangalore",
 
